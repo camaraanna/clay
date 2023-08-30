@@ -7,7 +7,6 @@
 body {
   width: 100%;
   height: 100vh;
-  overflow: hidden;
 }
 
 /*---------Home Page container ------- */
@@ -32,7 +31,48 @@ body {
   -ms-border-radius: var(--border-radius);
   -o-border-radius: var(--border-radius);
   max-width: 100.5vw;
-  max-height: 7.5vw;
+  max-height: 7vw;
+  transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
+  -webkit-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
+  -moz-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
+  -ms-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
+  -o-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
+}
+
+/*---------CAROUSEL------- */
+
+.container-carousel {
+  display: flex;
+  flex-basis: 56.25vw;
+  background: plum;
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+  max-width: 200.5vw;
+  max-height: 40.5vw;
+  transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
+  -webkit-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
+  -moz-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
+  -ms-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
+  -o-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
+}
+
+/*---------INTRODUCTION------- */
+
+.container-intro {
+  display: flex;
+  flex-basis: 56.25vw;
+  background: blue;
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+  max-width: 200.5vw;
+  max-height: 20.5vw;
+  margin-top: 30px;
   transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
   -webkit-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
   -moz-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
