@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "../../layouts/Navbar";
 import Carousel from "../../components/Carousel";
 import Introduction from "../../components/Introduction";
+import Footer from "../../layouts/Footer";
+import Recommendation from "../../components/Recommendation";
 
 export const HomePage = () => {
   return (
@@ -12,6 +14,9 @@ export const HomePage = () => {
       </div>
       <Carousel />
       <Introduction />
+      <Recommendation />
+
+      <Footer />
     </div>
   );
 };

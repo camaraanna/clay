@@ -9,14 +9,21 @@ body {
   height: 100vh;
 }
 
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+
 /*---------Home Page container ------- */
 .container-home-page {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin: 30px;
 }
 
-/*---------BARRE DE NAVIGATION ------- */
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+
+/*---------NAVBAR------- */
 
 .container_navbar {
   display: flex;
@@ -39,6 +46,46 @@ body {
   -o-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
 }
 
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+
+/*---------BURGER MENU------- */
+
+#burger-label {
+  display: block;
+  position: relative;
+  height: 18px;
+  width: 100px;
+  left: 140px;
+  border-bottom: 1px solid var(--blue);
+  margin: 0;
+  color: purple;
+  font-size: 6rem;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/*---------BURGER MENU Animation------- */
+
+#burger-label::after {
+  content: "=";
+  color: white;
+  position: absolute;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  font-size: 5rem;
+  height: 20px;
+  width: 80px;
+  top: 20px;
+  left: 110px;
+}
+
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+
 /*---------CAROUSEL------- */
 
 .container-carousel {
@@ -59,20 +106,63 @@ body {
   -o-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
 }
 
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+
 /*---------INTRODUCTION------- */
 
 .container-intro {
   display: flex;
   flex-basis: 56.25vw;
   background: blue;
-  border-radius: var(--border-radius);
-  -webkit-border-radius: var(--border-radius);
-  -moz-border-radius: var(--border-radius);
-  -ms-border-radius: var(--border-radius);
-  -o-border-radius: var(--border-radius);
   max-width: 200.5vw;
   max-height: 20.5vw;
-  margin-top: 30px;
+  margin-top: 60px;
+  transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
+  -webkit-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
+  -moz-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
+  -ms-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
+  -o-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
+}
+
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+
+/*---------RECOMMENDATION------- */
+
+.container-recommendation {
+  display: flex;
+  flex-basis: 30.25vw;
+  background: goldenrod;
+  margin-top: 60px;
+  transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
+  -webkit-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
+  -moz-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
+  -ms-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
+  -o-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
+}
+
+/*---------Recommendation box Article------- */
+.Recommendation-Article {
+  margin: 10px;
+  background: blue;
+  flex-basis: 56.25vw;
+  max-width: 500.5vw;
+  max-height: 40.5vw;
+}
+
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+
+/*---------FOOTER------- */
+
+.container-footer {
+  display: flex;
+  flex-basis: 56.25vw;
+  background: plum;
+  max-width: 200.5vw;
+  max-height: 40.5vw;
+  margin-top: 60px;
   transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
   -webkit-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
   -moz-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
