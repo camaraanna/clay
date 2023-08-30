@@ -154,6 +154,34 @@ body {
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
 
+/*---------Description brand home page------- */
+.container-description-brand {
+  display: flex;
+  flex-basis: 50.25vw;
+  background: goldenrod;
+  margin-top: 60px;
+  transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
+  -webkit-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
+  -moz-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
+  -ms-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
+  -o-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
+}
+
+.description-brand {
+  background: blue;
+  flex-basis: 56.25vw;
+  max-width: 500.5vw;
+  max-height: 40.5vw;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+
 /*---------FOOTER------- */
 
 .container-footer {

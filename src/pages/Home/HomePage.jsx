@@ -4,6 +4,7 @@ import Carousel from "../../components/Carousel";
 import Introduction from "../../components/Introduction";
 import Footer from "../../layouts/Footer";
 import Recommendation from "../../components/Recommendation";
+import DescriptionBrand from "../../components/DescriptionBrand";
 
 export const HomePage = () => {
   return (
@@ -14,6 +15,8 @@ export const HomePage = () => {
       </div>
       <Carousel />
       <Introduction />
+      <Recommendation />
+      <DescriptionBrand />
       <Recommendation />
 
       <Footer />
