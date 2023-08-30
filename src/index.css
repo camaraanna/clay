@@ -1,4 +1,41 @@
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/*---------Home Page container ------- */
+.container-home-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/*---------BARRE DE NAVIGATION ------- */
+
+.container_navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 56.25vw;
+  margin: 0;
+  background: blue;
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+  max-width: 100.5vw;
+  max-height: 7.5vw;
+  transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
+  -webkit-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
+  -moz-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
+  -ms-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
+  -o-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
 }
