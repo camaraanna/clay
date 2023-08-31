@@ -4,11 +4,11 @@ const data = [
     title: "Vase made with...",
     type: "vase",
     imgArticle: ameliaB,
+    description_Article: "vase blable ",
     price: "50,60 $",
     idThumbnail: ameliabId,
     Artistname: "Keyli Anderson",
-    description_Article: "vase blable ",
-    imageThumbnail: photoartist,
+    image_Artist: photoartist,
     description_Artist: "born in  ",
   },
 ];
