@@ -1,15 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/img/Logo_clay.png";
 
 export const Navbar = () => {
   return (
     <div className="container_navbar">
       <div className="container-logo">
-    
-        <div className="logo"></div>
+        <div className="container-logo">
+          <figure>
+            <img className="logo" src={logo} alt="" srcset="" />
+          </figure>
+        </div>
       </div>
+
       <div className="dropdown">
-        <button className="dropbtn">Menu</button>
+        <button className="dropbtn">
+          <h3 className="dropbtn-text">Menu</h3>
+        </button>
         <div className="dropdown-content">
           {/*Link is use to connect the navigator to the page Reservation */}
 

@@ -10,8 +10,8 @@ export const HomePage = () => {
   return (
     <div className="container-home-page">
       <Navbar />
-      <div>
-        <h1 className="title home-Page">CLAY THE ARTIST LIBRARY </h1>
+      <div className="container-title-homePage">
+        <h1 className="title-homePage">Artistry for All: Affordable and Unique Creations </h1>
       </div>
       <Carousel />
       <Introduction />
