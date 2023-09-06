@@ -1,6 +1,8 @@
 import Vase_0 from "../assets/img/Vase_000.png";
 import Lamp_0 from "../assets/img/Lamp_000.png";
 import Chair_0 from "../assets/img/Chair_000.png";
+import Chair_1 from "../assets/img/Chair_001.png";
+import Table_0 from "../assets/img/Table_000.png";
 
 // this Js component will allow us to import productSore.js and grab the products array from it a  //
 
@@ -19,7 +21,7 @@ const productsArray = [
   },
   {
     id: "2",
-    title: "Vase made with...",
+    title: "Chair Leclo",
     type: "Chair",
     imgProduct: Chair_0,
     description_Product: "vase blable ",
@@ -31,7 +33,7 @@ const productsArray = [
   },
   {
     id: "3",
-    title: "Vase made with...",
+    title: 'Vase "Petit Lou"',
     type: "Painting",
     imgProduct: Vase_0,
     description_Product: "vase blable ",
@@ -44,8 +46,8 @@ const productsArray = [
   {
     id: "4",
     title: "Vase made with...",
-    type: "Chair",
-    imgProduct: "ameliaB",
+    type: Chair_1,
+    imgProduct: Table_0,
     description_Product: "vase blable ",
     price: 150,
     idThumbnail: "ameliabId",
