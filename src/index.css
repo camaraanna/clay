@@ -145,6 +145,7 @@ body {
 .span-modal {
   font-family: var(--font-Syne);
   font-weight: 700;
+  font-size: 1.3rem;
 }
 
 /*---------------------------------------------------------------*/
@@ -320,7 +321,6 @@ body {
   margin: 10px;
   padding: 20px 60px;
   gap: 5px;
-  /* background: blue; */
   flex-basis: 56.25vw;
   max-width: 500.5vw;
   max-height: 50.5vw;
@@ -405,6 +405,15 @@ section.container-description-brand .description-brand {
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
 
+/*------STORE------ */
+
+.container-product {
+  display: flex;
+  width: 100%;
+}
+
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
 /*---------FOOTER------- */
 
 .container-footer {

@@ -29,7 +29,9 @@ export const Navbar = () => {
       <div className="container-logo">
         <div className="container-logo">
           <figure className="logo-container">
-            <img className="logo" src={logo} alt="" srcset="" />
+            <Link smooth="true" to={`/`}>
+              <img className="logo" src={logo} alt="" srcset="" />
+            </Link>
           </figure>
         </div>
       </div>
@@ -39,7 +41,6 @@ export const Navbar = () => {
         <button onClick={handleShow}></button>
       </div>
       <div>
-        
         <button
           className="openModalBtn"
           onClick={() => {

@@ -17,7 +17,10 @@ function ProductCard(props) {
   return (
     <section>
       <article>
+        <img src={product.imgProduct} alt="" />
         <h1>{product.title}</h1>
+        <h2>${product.description_Product}</h2>
+        <h2>${product.Artistname}</h2>
         <h2>${product.price}</h2>
 
         {/* If the quantity is equal to 0 it's going to show add to cart but if it's at least one item then we will show a different interface  */}
