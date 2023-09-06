@@ -4,8 +4,10 @@ import { useState, useContext } from "react";
 import logo from "../assets/img/Logo_clay.png";
 import { CartContext } from "../CartContext";
 import CartProduct from "../components/CartProduct";
+import Modal from "../components/Modal";
 
 export const Navbar = () => {
+  const [modalOpen, setModalOpen] = useState(false);
   const cart = useContext(CartContext);
   const [show, setShow] = useState(false); // We initially have the modal not showing at first //
 
@@ -33,8 +35,23 @@ export const Navbar = () => {
       <div>
         {/* Here we add a onClick to handle show to store the show variable  */}
         {/*  Our Navbar with productsCount is going to refresh and show the latest up-to-date product count value  */}
-        <button onClick={handleShow}>Cart ({productsCount} Items)</button>
+        <button onClick={handleShow}></button>
       </div>
+
+      <div className="a">
+        <h1>Hey, click on the button to open the modal.</h1>
+        <button
+          className="openModalBtn"
+          onClick={() => {
+            setModalOpen(true);
+          }}
+        >
+         Cart ({productsCount} Items) 
+        </button>
+
+        {modalOpen && <Modal setOpenModal={setModalOpen} />}
+      </div>
+
       <div className="dropdown">
         <button className="dropbtn">
           <h3 className="dropbtn-text">Menu</h3>

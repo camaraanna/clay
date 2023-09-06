@@ -1,9 +1,11 @@
 import { productsArray } from "../data/productsStore";
 import ProductCard from "../components/ProductCard";
+import Navbar from "../layouts/Navbar";
 function Store() {
   return (
     <>
-      <h1 className="p-3">Welcome to the store !</h1>
+      <Navbar />
+      <h1 className="p-3">SHOP </h1>
       <div className="g-4">
         {/*product is looking at the product we are mapping over  */}
         {productsArray.map((product, index) => (
