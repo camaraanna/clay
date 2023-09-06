@@ -15,14 +15,16 @@ function ProductCard(props) {
   console.log(cart.items);
 
   return (
-    <section>
-      <article>
+    <section className="container-box-product">
+      <article className="box-product">
+        <div className="container-btn-view">
+          <button className="btn-view">VIEW</button>
+        </div>
         <img src={product.imgProduct} alt="" />
-        <h1>{product.title}</h1>
-        <h2>${product.description_Product}</h2>
-        <h2>${product.Artistname}</h2>
+        <h2>{product.title}</h2>
+        <h3>{product.description_Product}</h3>
+        <h3>{product.Artistname}</h3>
         <h2>${product.price}</h2>
-
         {/* If the quantity is equal to 0 it's going to show add to cart but if it's at least one item then we will show a different interface  */}
         {productQuantity > 0 ? (
           <>

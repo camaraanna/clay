@@ -153,7 +153,8 @@ body {
 
 /*---------DROP DOWN MENU------- */
 
-.dropbtn {
+.dropbtn,
+.btn-view {
   background-color: #ffffff;
   width: 130px;
   color: black;
@@ -407,22 +408,24 @@ section.container-description-brand .description-brand {
 
 /*------STORE------ */
 
+/*------Title Store------ */
+
+.container-store {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .container-product {
   display: flex;
-  width: 100%;
-}
-
-/*---------------------------------------------------------------*/
-/*---------------------------------------------------------------*/
-/*---------FOOTER------- */
-
-.container-footer {
-  display: flex;
-  flex-basis: 56.25vw;
-  background-color: var(--grey);
-  max-width: 200.5vw;
-  max-height: 40.5vw;
+  flex-basis: 90.5vw;
+  /* background: goldenrod; */
   margin-top: 60px;
+  max-width: 200vw;
+  max-height: 900vw;
+  flex-wrap: wrap;
+  gap: 10vw;
+  justify-content: center;
+  align-items: center;
   transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
   -webkit-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
   -moz-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
@@ -430,6 +433,77 @@ section.container-description-brand .description-brand {
   -o-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
 }
 
+.container-box-product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-box-product:hover {
+  border: solid 2px black;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.box-product {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 20px;
+  align-items: center;
+  align-content: center;
+}
+
+.container-btn-view {
+  display: flex;
+  position: absolute;
+  max-height: 70vw;
+  top: 10vw;
+  max-width: 10vw;
+  z-index: 1;
+  opacity: 0;
+}
+
+.container-btn-view:hover {
+  opacity: 1;
+}
+
+.hover-container-btn-view {
+  background-color: aqua;
+  max-width: 300px;
+  max-height: 700px;
+}
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*---------FOOTER------- */
+
+.container-footer {
+  display: flex;
+  margin-top: 15vw;
+  flex-basis: 500.5vw;
+  background-color: var(--grey);
+  padding: 4vw;
+  height: 30vw;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.container-link-footer {
+  display: flex;
+  background-color: aqua;
+  max-width: 700.5vw;
+  max-height: 10.5vw;
+}
+
+/* .container-logo.footer {
+  background-color: aqua;
+  height: 30%;
+} */
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/

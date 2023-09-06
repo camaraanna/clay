@@ -1,37 +1,39 @@
-import VaseAmelia from "../assets/img/product_0.jpg";
+import Vase_0 from "../assets/img/Vase_000.png";
+import Lamp_0 from "../assets/img/Lamp_000.png";
+import Chair_0 from "../assets/img/Chair_000.png";
 
 // this Js component will allow us to import productSore.js and grab the products array from it a  //
 
 const productsArray = [
   {
     id: "1",
-    title: "Vase made with...",
-    type: "Lampe",
-    imgProduct: "ameliaB",
+    title: "Rosco Lamp ",
+    type: "Lamp",
+    imgProduct: Lamp_0,
     description_Product: "vase blable ",
     price: 220,
     idThumbnail: "ameliabId",
     Artistname: "Antonio Rodrigez",
     image_Artist: "photoartist",
-    description_Artist: "Antonio Rodrigez, born in the vibrant city of Barcelona, is a visionary artist who has risen to become a prominent figure in contemporary artistic creation, particularly in the field of ultramodern lamp design. With a bold creative spirit and a keen sense of innovation, he crafts luminous works that defy expectations and blend organic and geometric forms with avant-garde materials.  Each of Antonio's lamps tells a unique story, evoking a harmonious fusion between modern minimalism and intricate complexity.",
+    description_Artist: "Antonio Rodrigez, born in the vibrant city of Barcelona, is a visionary artist who has risen to become a prominent figure in contemporary artistic creation, particularly in the field of ultramodern lamp design. With a bold creative spirit and a keen sense of innovation, he crafts luminous works that defy expectations and blend organic and geometric forms with avant-garde materials.  Each of Antonio's creation tells a unique story, evoking a harmonious fusion between modern minimalism and intricate complexity.",
   },
   {
     id: "2",
     title: "Vase made with...",
-    type: "vase",
-    imgProduct: "ameliaB",
+    type: "Chair",
+    imgProduct: Chair_0,
     description_Product: "vase blable ",
     price: 24.95,
     idThumbnail: "ameliabId",
     Artistname: "Antonio Rodrigez",
     image_Artist: "photoartist",
-    description_Artist: "Antonio Rodrigez, born in the vibrant city of Barcelona, is a visionary artist who has risen to become a prominent figure in contemporary artistic creation, particularly in the field of ultramodern lamp design. With a bold creative spirit and a keen sense of innovation, he crafts luminous works that defy expectations and blend organic and geometric forms with avant-garde materials.  Each of Antonio's lamps tells a unique story, evoking a harmonious fusion between modern minimalism and intricate complexity.",
+    description_Artist: "Antonio Rodrigez, born in the vibrant city of Barcelona, is a visionary artist who has risen to become a prominent figure in contemporary artistic creation, particularly in the field of ultramodern lamp design. With a bold creative spirit and a keen sense of innovation, he crafts luminous works that defy expectations and blend organic and geometric forms with avant-garde materials.  Each of Antonio's creation tells a unique story, evoking a harmonious fusion between modern minimalism and intricate complexity.",
   },
   {
     id: "3",
     title: "Vase made with...",
-    type: "Vase",
-    imgProduct: "ameliaB",
+    type: "Painting",
+    imgProduct: Vase_0,
     description_Product: "vase blable ",
     price: 85.95,
     idThumbnail: "ameliabId",
@@ -55,7 +57,7 @@ const productsArray = [
   {
     id: "5",
     title: "Vase made with...",
-    type: "Vase",
+    type: "Table",
     imgProduct: "ameliaB",
     description_Product: "vase blable ",
     price: 160.95,
@@ -68,7 +70,7 @@ const productsArray = [
   {
     id: "6",
     title: "Vase made with...",
-    type: "Table",
+    type: "Vase",
     imgProduct: "ameliaB",
     description_Product: "vase blable ",
     price: 50.95,
@@ -78,11 +80,10 @@ const productsArray = [
     description_Artist: " Arya Kapoor is an artist from New Delhi, has swiftly captured the art world with her exceptional talent in pottery. Her artistic journey reflects the cultural diversity and inspiration of her vibrant city. Arya Kapoor has elevated pottery to an intricate form of expression, shaping clay with grace and precision to create pieces that blend natural simplicity with artistic sophistication. Each of her pottery creations tells a unique story, bridging tradition and innovation. ",
   },
 
- 
   {
     id: "7",
     title: "Vase made with...",
-    type: "Table",
+    type: "Lamp",
     imgProduct: "ameliaB",
     description_Product: "vase blable ",
     price: 24.95,
@@ -107,7 +108,7 @@ const productsArray = [
   {
     id: "9",
     title: "Vase made with...",
-    type: "Lampe",
+    type: "Table",
     imgProduct: "ameliaB",
     description_Product: "vase blable ",
     price: 24.95,

@@ -1,10 +1,11 @@
 import { productsArray } from "../data/productsStore";
 import ProductCard from "../components/ProductCard";
+import Footer from "../layouts/Footer";
 function Store() {
   return (
     <>
       <h1 className="">STORE </h1>
-      <section>
+      <section className="container-store">
         <div className="container-product">
           {/*product is looking at the product we are mapping over  */}
           {productsArray.map((product, index) => (
@@ -16,8 +17,9 @@ function Store() {
           ))}
           {/*Map allow us to go to every single element in the array and import the data we want. In this case we are mapping over our product */}
           {/*We are going to return a jsx immdeditely */}
-        </div>
+        </div>  
       </section>
+ 
     </>
   );
 }
