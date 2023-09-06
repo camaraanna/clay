@@ -7,7 +7,7 @@ export const Introduction = () => {
       <p className="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
         <div className="btn-shop">
-        <Link to={`/Shop`}>
+        <Link to={`/Store`}>
           <button className="btn-shop">Shop </button>
         </Link>
         </div>

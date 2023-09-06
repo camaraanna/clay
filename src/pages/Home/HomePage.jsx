@@ -18,7 +18,6 @@ export const HomePage = () => {
       <Recommendation />
       <DescriptionBrand />
       <Recommendation />
-
       <Footer />
     </div>
   );
