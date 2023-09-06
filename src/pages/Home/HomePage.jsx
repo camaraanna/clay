@@ -9,7 +9,7 @@ import DescriptionBrand from "../../components/DescriptionBrand";
 export const HomePage = () => {
   return (
     <div className="container-home-page">
-      <Navbar />
+      
       <div className="container-title-homePage">
         <h1 className="title-homePage">Artistry for All: Affordable and Unique Creations </h1>
       </div>

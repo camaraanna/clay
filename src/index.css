@@ -17,7 +17,60 @@ body {
   height: 100vh;
 }
 
-/*Modal*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+
+/*---------Home Page container ------- */
+.container-home-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.container-title-homePage {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+.title-homePage {
+  text-align: center;
+  font-family: var(--font-Syne);
+  font-size: 3rem;
+}
+
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+
+/*---------NAVBAR------- */
+
+.container_navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-basis: 56.25vw;
+  margin: 50px;
+  max-width: 100.5vw;
+  max-height: 7vw;
+  transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
+  -webkit-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
+  -moz-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
+  -ms-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
+  -o-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
+}
+
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+
+/*---------Logo------- */
+
+.logo {
+  max-width: 15%;
+  margin-left: 40px;
+}
+
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*---------Modal ------- */
 
 .modalBackground {
   position: absolute;
@@ -34,8 +87,8 @@ body {
 }
 
 .modalContainer {
-  width: 500px;
-  height: 500px;
+  max-width: 300px;
+  max-height: 500px;
   border-radius: 12px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -71,54 +124,27 @@ body {
   text-align: center;
 }
 
-/*---------------------------------------------------------------*/
-/*---------------------------------------------------------------*/
+/*-----------Button Modal----------------*/
 
-/*---------Home Page container ------- */
-.container-home-page {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+.img-btn-Modal {
+  width: 30%;
+  cursor: pointer;
 }
-.container-title-homePage {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-  margin-bottom: 100px;
+
+.img-btn-Modal {
+  width: 30%;
+  cursor: pointer;
 }
-.title-homePage {
-  text-align: center;
+
+.openModalBtn {
+  border: none;
+  background: none;
+}
+
+/*-----------Span Modal---------*/
+.span-modal {
   font-family: var(--font-Syne);
-  font-size: 3rem;
-}
-
-/*---------------------------------------------------------------*/
-/*---------------------------------------------------------------*/
-
-/*---------NAVBAR------- */
-
-.container_navbar {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  flex-basis: 56.25vw;
-  margin: 20px;
-  max-width: 100.5vw;
-  max-height: 7vw;
-  transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
-  -webkit-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
-  -moz-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
-  -ms-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
-  -o-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
-}
-
-/*---------------------------------------------------------------*/
-/*---------------------------------------------------------------*/
-
-/*---------Logo------- */
-
-.logo {
-  width: 15%;
+  font-weight: 700;
 }
 
 /*---------------------------------------------------------------*/
@@ -523,7 +549,7 @@ section.container-description-brand .description-brand {
   /*---------Logo------- */
 
   .logo {
-    min-width: 15%;
+    max-width: 15%;
   }
 
   /*---------RECOMMENDATION------- */

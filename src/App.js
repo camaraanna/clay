@@ -9,11 +9,13 @@ import ArticleSheet from "./pages/ArticleSheet";
 import Success from "./pages/Success";
 import Cancel from "./pages/Cancel";
 import CartProvider from "./CartContext";
+import Navbar from "./layouts/Navbar";
 
 function App() {
   return (
     <CartProvider>
     <div>
+    <Navbar />
       <ScrollToTop />
       <Routes>
         <Route index element={<HomePage />} />

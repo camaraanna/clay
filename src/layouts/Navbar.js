@@ -5,6 +5,7 @@ import logo from "../assets/img/Logo_clay.png";
 import { CartContext } from "../CartContext";
 import CartProduct from "../components/CartProduct";
 import Modal from "../components/Modal";
+import CartIcon from "../assets/img/icons/cart-icon.png";
 
 export const Navbar = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -27,7 +28,7 @@ export const Navbar = () => {
     <div className="container_navbar">
       <div className="container-logo">
         <div className="container-logo">
-          <figure>
+          <figure className="logo-container">
             <img className="logo" src={logo} alt="" srcset="" />
           </figure>
         </div>
@@ -37,16 +38,16 @@ export const Navbar = () => {
         {/*  Our Navbar with productsCount is going to refresh and show the latest up-to-date product count value  */}
         <button onClick={handleShow}></button>
       </div>
-
-      <div className="a">
-        <h1>Hey, click on the button to open the modal.</h1>
+      <div>
+        
         <button
           className="openModalBtn"
           onClick={() => {
             setModalOpen(true);
           }}
         >
-         Cart ({productsCount} Items) 
+          <img className="img-btn-Modal" src={CartIcon} />
+          <span className="span-modal">{productsCount}</span>
         </button>
 
         {modalOpen && <Modal setOpenModal={setModalOpen} />}
@@ -57,7 +58,10 @@ export const Navbar = () => {
           <h3 className="dropbtn-text">Menu</h3>
         </button>
         <div className="dropdown-content">
-          {/*Link is use to connect the navigator to the page Reservation */}
+          <Link className="navbar-title-burger" smooth="true" to={`/`}>
+            Home page
+          </Link>
+          {/*Link is use to connect the navigator to other pages */}
 
           <Link className="information" smooth="true" to={`/OurHistory`}>
             Our History
@@ -65,7 +69,7 @@ export const Navbar = () => {
           <Link className="information" smooth="true" to={`/About`}>
             About
           </Link>
-          <Link className="information" smooth="true" to={`/Shop`}>
+          <Link className="information" smooth="true" to={`/Store`}>
             Shop
           </Link>
         </div>
@@ -77,13 +81,16 @@ export const Navbar = () => {
         <label id="burger-label" htmlFor="nav-burger"></label>
 
         <div className="information">
+          <Link className="navbar-title-burger" smooth="true" to={`/`}>
+            Home page
+          </Link>
           <Link className="navbar-title-burger" smooth="true" to={`/OurHistory`}>
             Our History
           </Link>
           <Link className="navbar-title-burger" smooth="true" to={`/About`}>
             About
           </Link>
-          <Link className="navbar-title-burger" smooth="true" to={`/Shop`}>
+          <Link className="navbar-title-burger" smooth="true" to={`/Store`}>
             Shop
           </Link>
         </div>
