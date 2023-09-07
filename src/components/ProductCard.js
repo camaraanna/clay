@@ -18,18 +18,19 @@ function ProductCard(props) {
   return (
     <section className="container-box-product">
       <article className="box-product">
-        <Link to={`/Article/${product.id}`} key={props.id}>
-          <button className="btn-view">
-            <h4 className="title-btn-view">View</h4>
-          </button>
-        </Link>{" "}
         <div className="container-btn-view">
-          <button className="btn-view">VIEW</button>
+          <Link to={`/Article/${product.id}`} key={props.id}>
+            {" "}
+            <button className="btn-view">VIEW</button>
+          </Link>
         </div>
         <img src={product.imgProduct} alt="" />
         <h2>{product.title}</h2>
         <h3>{product.description_Product}</h3>
-        <h3>{product.Artistname}</h3>
+        <Link to={`/ArtistsPage/${product.id}`} key={props.id}>
+             <h3>{product.Artistname}</h3>
+          </Link>
+       
         <h2>${product.price}</h2>
         {/* If the quantity is equal to 0 it's going to show add to cart but if it's at least one item then we will show a different interface  */}
         {productQuantity > 0 ? (
