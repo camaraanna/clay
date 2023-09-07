@@ -1,36 +1,46 @@
-import { CartContext } from "../CartContext";
-import { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import { getProductData } from "../data/productsStore";
 
-export const ArticleSheet = (props) => {
-  const cart = useContext(CartContext);
-  const id = props.id;
-  const [selectedProduct, setSelectedProduct] = useState(null);
+export const ArticleSheet = () => {
+  const { id } = useParams(); // Use useParams to get the 'id' parameter
+  const [selectedCard, setSelectedCard] = useState(null);
 
   useEffect(() => {
-    // Call getProductData with the provided id to get the product data
-    const productData = getProductData(id);
+    // Fetch the data for the selected product based on the 'id' parameter
+    const product = getProductData(id);
 
-    // Update selectedProduct with the product data
-    setSelectedProduct(productData);
+    if (product) {
+      setSelectedCard(product);
+    } else {
+      // Handle the case where the product is not found
+      console.error(`Product not found for ID: ${id}`);
+    }
   }, [id]);
 
-  console.log("ID passed to getProductData:", id);
-  const productData = getProductData(id);
-  console.log("Product Data:", productData);
+  // Render the product information here
   return (
-    <div>
-      {selectedProduct ? (
-        <>
-          <h2>{selectedProduct.title}</h2>
-          <p>{selectedProduct.description_Product}</p>
-          {/* Add more product details as needed */}
-        </>
-      ) : (
-        <p>Product not found for ID: {id}</p>
+    <div className="display selectedcard" style={{ marginTop: "100px", zIndex: "10" }}>
+      {selectedCard && (
+        <div className="container-page">
+          {/* Render product details */}
+          <div>
+            <figure>
+              <img className="img-page" src={selectedCard.imgProduct} alt="" />
+            </figure>
+            {/* Render other product details */}
+          </div>
+          {/* Other components */}
+
+          <div>
+            <h2>{selectedCard.type}</h2>
+            <h3>{selectedCard.description_Product}</h3>
+            <h3>{selectedCard.Artistname}</h3>
+            <h2>${selectedCard.price}</h2>
+          </div>
+        </div>
       )}
     </div>
   );
 };
-
 export default ArticleSheet;

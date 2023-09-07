@@ -18,17 +18,11 @@ function ProductCard(props) {
   return (
     <section className="container-box-product">
       <article className="box-product">
-
-
-      <Link to={`/Article/${props.id}`} key={props.id}>
-                <button className="btn-view">
-                  <h4 className="title-btn-view">View</h4>
-                </button>
-              </Link>{" "}
-
-
-
-
+        <Link to={`/Article/${product.id}`} key={props.id}>
+          <button className="btn-view">
+            <h4 className="title-btn-view">View</h4>
+          </button>
+        </Link>{" "}
         <div className="container-btn-view">
           <button className="btn-view">VIEW</button>
         </div>
