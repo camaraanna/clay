@@ -69,7 +69,7 @@ const productsArray = [
     type: "Vase",
     imgProduct: Vase_1,
     description_Product: "vase blable ",
-    price: 160.95,
+    price: 28.95,
     idThumbnail: "ameliabId",
     Artistname: "Arya Kapoor",
     image_Artist: "photoartist",

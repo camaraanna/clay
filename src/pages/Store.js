@@ -1,6 +1,7 @@
 import { productsArray } from "../data/productsStore";
 import ProductCard from "../components/ProductCard";
 import Footer from "../layouts/Footer";
+import { Link } from "react-router-dom";
 function Store() {
   return (
     <>
