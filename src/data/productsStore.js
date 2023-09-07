@@ -11,11 +11,24 @@ import Vase_2 from "../assets/img/Vase_002.png";
 import Painting_0 from "../assets/img/Painting_000.png";
 import Painting_1 from "../assets/img/Painting_001.png";
 
+// Rosco Lamp: price_1NnnYxBxN6v7JPxmTfq3rkAC
+// Chair Leclo: price_1Nnne7BxN6v7JPxmnsVrjlpj
+//Vase "Petit Lou": price_1NnnrzBxN6v7JPxmCzX6UJwh
+//Table vaseli: price_1NnntUBxN6v7JPxmOktCpShW
+//Vase cokera: price_1Nnny1BxN6v7JPxmawhhuJMJ
+//Chair amonbi: price_1Nno19BxN6v7JPxms1uxUNWw
+//Lamp huleti: price_1Nno7UBxN6v7JPxmrAWBFs9W
+//Table barelly: price_1NnoBXBxN6v7JPxmED0bQYvJ
+//Table pink infinity: price_1NnoEFBxN6v7JPxmhGDCyPs2
+//Vase mobuchi: price_1NnoYVBxN6v7JPxmawPMG4Uh
+//Timeless Treasures: price_1NnoZpBxN6v7JPxmEdJcvAzQ
+//Harmony of Heritage: price_1NnofnBxN6v7JPxmVA4yQRY9
+
 // this Js component will allow us to import productSore.js and grab the products array from it a  //
 
 const productsArray = [
   {
-    id: "1",
+    id: "price_1NnnYxBxN6v7JPxmTfq3rkAC",
     title: "Rosco Lamp ",
     type: "Lamp",
     imgProduct: Lamp_0,
@@ -27,7 +40,7 @@ const productsArray = [
     description_Artist: "Antonio Rodrigez, born in the vibrant city of Barcelona, is a visionary artist who has risen to become a prominent figure in contemporary artistic creation, particularly in the field of ultramodern lamp design. With a bold creative spirit and a keen sense of innovation, he crafts luminous works that defy expectations and blend organic and geometric forms with avant-garde materials.  Each of Antonio's creation tells a unique story, evoking a harmonious fusion between modern minimalism and intricate complexity.",
   },
   {
-    id: "2",
+    id: "price_1Nnne7BxN6v7JPxmnsVrjlpj",
     title: "Chair Leclo",
     type: "Chair",
     imgProduct: Chair_0,
@@ -39,7 +52,7 @@ const productsArray = [
     description_Artist: "Antonio Rodrigez, born in the vibrant city of Barcelona, is a visionary artist who has risen to become a prominent figure in contemporary artistic creation, particularly in the field of ultramodern lamp design. With a bold creative spirit and a keen sense of innovation, he crafts luminous works that defy expectations and blend organic and geometric forms with avant-garde materials.  Each of Antonio's creation tells a unique story, evoking a harmonious fusion between modern minimalism and intricate complexity.",
   },
   {
-    id: "3",
+    id: " price_1NnnrzBxN6v7JPxmCzX6UJwh",
     title: 'Vase "Petit Lou"',
     type: "Vase",
     imgProduct: Vase_0,
@@ -51,7 +64,7 @@ const productsArray = [
     description_Artist: "Catherine Dumas, a visionary artist born in Toulon, has captivated Europe with her extraordinary talent for crafting original and contemporary vases. Hailing from the picturesque town of Toulon, Catherine's artistic journey has taken her on a path of innovation and creativity that has left a lasting impact on the art world. Her creation are expressions of her unique perspective and artistic ingenuity. ",
   },
   {
-    id: "4",
+    id: "price_1NnntUBxN6v7JPxmOktCpShW",
     title: "Table vaseli",
     type: "Table",
     imgProduct: Table_0,
@@ -64,7 +77,7 @@ const productsArray = [
   },
 
   {
-    id: "5",
+    id: "price_1Nnny1BxN6v7JPxmawhhuJMJ",
     title: "Vase cokera",
     type: "Vase",
     imgProduct: Vase_1,
@@ -77,7 +90,7 @@ const productsArray = [
   },
 
   {
-    id: "6",
+    id: "price_1Nno19BxN6v7JPxms1uxUNWw",
     title: "Chair amonbi",
     type: "Chair",
     imgProduct: Chair_1,
@@ -90,7 +103,7 @@ const productsArray = [
   },
 
   {
-    id: "7",
+    id: "price_1Nno7UBxN6v7JPxmrAWBFs9W",
     title: "Lamp huleti",
     type: "Lamp",
     imgProduct: Lamp_1,
@@ -103,11 +116,11 @@ const productsArray = [
   },
 
   {
-    id: "8",
+    id: "price_1NnoBXBxN6v7JPxmED0bQYvJ",
     title: "Table barelly",
     type: "Table",
     imgProduct: Table_1,
-    description_Product: "vase blable ",
+    description_Product: "These tables embody the essence of minimalism with their clean and uncluttered design. The central piece is a perfectly round table, featuring a sleek and smooth tabletop. ",
     price: 140.95,
     idThumbnail: "ameliabId",
     Artistname: "Lucas Silva",
@@ -115,11 +128,11 @@ const productsArray = [
     description_Artist: "Lucas Silva, born in the heart of Rio de Janeiro, embodies the boldness and creativity that resonate within the contemporary art scene. Specializing in chair design, he has managed to transcend the borders of his place of birth to become a globally recognized figure. Is creation are true functional works of art. Each piece reflects a captivating fusion of innovative forms and functionality. ",
   },
   {
-    id: "9",
+    id: "price_1NnoEFBxN6v7JPxmhGDCyPs2",
     title: "Table pink infinity",
     type: "Table",
     imgProduct: Table_2,
-    description_Product: "vase blable ",
+    description_Product: "This round table boasts an inspired minimalist design enriched by its distinctive, curvaceous base. The tabletop is perfectly round, exuding simplicity and grace.",
     price: 54.85,
     idThumbnail: "ameliabId",
     Artistname: "Marco Bianchi & Elena Rossi",
@@ -127,11 +140,11 @@ const productsArray = [
     description_Artist: "This couple of artists, Marco Bianchi and Elena Rossi, embodies an exceptional fusion of creativity and love. Their story of personal and artistic union is beautifully reflected in their unique collaboration around porcelain, a delicate and elegant material. Together, they have breathed new life into this ancient art, creating decorative objects and porcelain tableware that have become coveted treasures throughout Italy. ",
   },
   {
-    id: "10",
+    id: "price_1NnoYVBxN6v7JPxmawPMG4Uh",
     title: "Vase mobuchi",
     type: "Vase",
     imgProduct: Vase_2,
-    description_Product: "vase blable ",
+    description_Product: "This vase showcases a minimalist design philosophy at its finest. Its form is a perfect short cylinder, free from any extraneous adornments, ensuring the focus remains on its clean lines  ",
     price: 20.95,
     idThumbnail: "ameliabId",
     Artistname: "Marco Bianchi & Elena Rossi",
@@ -140,11 +153,11 @@ const productsArray = [
   },
 
   {
-    id: "11",
+    id: "price_1NnoZpBxN6v7JPxmEdJcvAzQ",
     title: "Timeless Treasures",
     type: "Painting",
     imgProduct: Painting_0,
-    description_Product: "vase blable ",
+    description_Product: "This abstract masterpiece features a captivating blend of minimalist elements and the vibrant spirit of African art. The canvas is a tapestry of geometric shapes and forms.",
     price: 38.85,
     idThumbnail: "ameliabId",
     Artistname: "Simon Njoku",
@@ -153,11 +166,11 @@ const productsArray = [
   },
 
   {
-    id: "11",
+    id: "price_1NnofnBxN6v7JPxmVA4yQRY9",
     title: "Harmony of Heritage",
     type: "Painting",
     imgProduct: Painting_1,
-    description_Product: "vase blable ",
+    description_Product: "The composition, though minimalist, carries a deep sense of purpose, inviting viewers to engage in a contemplative journey through its depths.",
     price: 64.95,
     idThumbnail: "ameliabId",
     Artistname: "Simon Njoku",
