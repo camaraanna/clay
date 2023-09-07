@@ -1,10 +1,15 @@
-import React from 'react'
+import React from "react";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 export const ArtistsPage = () => {
   return (
     // Page artiste avec toutes les informations sur les artistes et leur  créations //
-    <div className='container-ArtistPage'><h2>NAME OF THE ARTIST</h2></div>
-  )
-}
+    <div className="container-ArtistPage">
+      <h2>NAME OF THE ARTIST</h2>
+    </div>
+  );
+};
 
 export default ArtistsPage;

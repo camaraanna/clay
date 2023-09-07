@@ -3,6 +3,13 @@ import Lamp_0 from "../assets/img/Lamp_000.png";
 import Chair_0 from "../assets/img/Chair_000.png";
 import Chair_1 from "../assets/img/Chair_001.png";
 import Table_0 from "../assets/img/Table_000.png";
+import Table_1 from "../assets/img/Table_001.png";
+import Vase_1 from "../assets/img/Vase_001.png";
+import Lamp_1 from "../assets/img/Lamp_001.png";
+import Table_2 from "../assets/img/Table_002.png";
+import Vase_2 from "../assets/img/Vase_002.png";
+import Painting_0 from "../assets/img/Painting_000.png";
+import Painting_1 from "../assets/img/Painting_001.png";
 
 // this Js component will allow us to import productSore.js and grab the products array from it a  //
 
@@ -13,7 +20,7 @@ const productsArray = [
     type: "Lamp",
     imgProduct: Lamp_0,
     description_Product: "vase blable ",
-    price: 220,
+    price: 30,
     idThumbnail: "ameliabId",
     Artistname: "Antonio Rodrigez",
     image_Artist: "photoartist",
@@ -25,7 +32,7 @@ const productsArray = [
     type: "Chair",
     imgProduct: Chair_0,
     description_Product: "vase blable ",
-    price: 24.95,
+    price: 34.95,
     idThumbnail: "ameliabId",
     Artistname: "Antonio Rodrigez",
     image_Artist: "photoartist",
@@ -34,7 +41,7 @@ const productsArray = [
   {
     id: "3",
     title: 'Vase "Petit Lou"',
-    type: "Painting",
+    type: "Vase",
     imgProduct: Vase_0,
     description_Product: "vase blable ",
     price: 85.95,
@@ -45,8 +52,8 @@ const productsArray = [
   },
   {
     id: "4",
-    title: "Vase made with...",
-    type: Chair_1,
+    title: "Table vaseli",
+    type: "Table",
     imgProduct: Table_0,
     description_Product: "vase blable ",
     price: 150,
@@ -58,37 +65,37 @@ const productsArray = [
 
   {
     id: "5",
-    title: "Vase made with...",
-    type: "Table",
-    imgProduct: "ameliaB",
+    title: "Vase cokera",
+    type: "Vase",
+    imgProduct: Vase_1,
     description_Product: "vase blable ",
     price: 160.95,
     idThumbnail: "ameliabId",
     Artistname: "Arya Kapoor",
     image_Artist: "photoartist",
-    description_Artist: " Arya Kapoor is an artist from New Delhi, has swiftly captured the art world with her exceptional talent in pottery. Her artistic journey reflects the cultural diversity and inspiration of her vibrant city. Arya Kapoor has elevated pottery to an intricate form of expression, shaping clay with grace and precision to create pieces that blend natural simplicity with artistic sophistication. Each of her pottery creations tells a unique story, bridging tradition and innovation. ",
+    description_Artist: " Arya Kapoor is an artist from New Delhi, has swiftly captured the art world with her exceptional talent. Her artistic journey reflects the cultural diversity and inspiration of her vibrant city. Arya Kapoor has elevated pottery to an intricate form of expression, shaping material with grace and precision to create pieces that blend natural simplicity with artistic sophistication. Each of her pottery creations tells a unique story, bridging tradition and innovation. ",
   },
 
   {
     id: "6",
-    title: "Vase made with...",
+    title: "Chair amonbi",
     type: "Vase",
-    imgProduct: "ameliaB",
+    imgProduct: Chair_1,
     description_Product: "vase blable ",
     price: 50.95,
     idThumbnail: "ameliabId",
     Artistname: "Arya Kapoor",
     image_Artist: "photoartist",
-    description_Artist: " Arya Kapoor is an artist from New Delhi, has swiftly captured the art world with her exceptional talent in pottery. Her artistic journey reflects the cultural diversity and inspiration of her vibrant city. Arya Kapoor has elevated pottery to an intricate form of expression, shaping clay with grace and precision to create pieces that blend natural simplicity with artistic sophistication. Each of her pottery creations tells a unique story, bridging tradition and innovation. ",
+    description_Artist: " Arya Kapoor is an artist from New Delhi, has swiftly captured the art world with her exceptional talent. Her artistic journey reflects the cultural diversity and inspiration of her vibrant city. Arya Kapoor has elevated pottery to an intricate form of expression, shaping clay with grace and precision to create pieces that blend natural simplicity with artistic sophistication. Each of her pottery creations tells a unique story, bridging tradition and innovation. ",
   },
 
   {
     id: "7",
-    title: "Vase made with...",
+    title: "Lamp huleti",
     type: "Lamp",
-    imgProduct: "ameliaB",
+    imgProduct: Lamp_1,
     description_Product: "vase blable ",
-    price: 24.95,
+    price: 21.85,
     idThumbnail: "ameliabId",
     Artistname: "Lucas Silva",
     image_Artist: "photoartist",
@@ -97,11 +104,11 @@ const productsArray = [
 
   {
     id: "8",
-    title: "Vase made with...",
-    type: "Chair",
-    imgProduct: "ameliaB",
+    title: "Table barelly",
+    type: "Table",
+    imgProduct: Table_1,
     description_Product: "vase blable ",
-    price: 24.95,
+    price: 140.95,
     idThumbnail: "ameliabId",
     Artistname: "Lucas Silva",
     image_Artist: "photoartist",
@@ -109,11 +116,11 @@ const productsArray = [
   },
   {
     id: "9",
-    title: "Vase made with...",
+    title: "Table pink infinity",
     type: "Table",
-    imgProduct: "ameliaB",
+    imgProduct: Table_2,
     description_Product: "vase blable ",
-    price: 24.95,
+    price: 54.85,
     idThumbnail: "ameliabId",
     Artistname: "Marco Bianchi & Elena Rossi",
     image_Artist: "photoartist",
@@ -121,11 +128,11 @@ const productsArray = [
   },
   {
     id: "10",
-    title: "Vase made with...",
+    title: "Vase mobuchi",
     type: "Vase",
-    imgProduct: "ameliaB",
+    imgProduct: Vase_2,
     description_Product: "vase blable ",
-    price: 24.95,
+    price: 20.95,
     idThumbnail: "ameliabId",
     Artistname: "Marco Bianchi & Elena Rossi",
     image_Artist: "photoartist",
@@ -136,9 +143,9 @@ const productsArray = [
     id: "11",
     title: "Timeless Treasures",
     type: "Painting",
-    imgProduct: "ameliaB",
+    imgProduct: Painting_0,
     description_Product: "vase blable ",
-    price: 24.95,
+    price: 38.85,
     idThumbnail: "ameliabId",
     Artistname: "Simon Njoku",
     image_Artist: "photoartist",
@@ -149,9 +156,9 @@ const productsArray = [
     id: "11",
     title: "Harmony of Heritage",
     type: "Painting",
-    imgProduct: "ameliaB",
+    imgProduct: Painting_1,
     description_Product: "vase blable ",
-    price: 24.95,
+    price: 64.95,
     idThumbnail: "ameliabId",
     Artistname: "Simon Njoku",
     image_Artist: "photoartist",

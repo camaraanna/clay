@@ -26,13 +26,15 @@ body {
   justify-content: center;
   flex-direction: column;
 }
-.container-title-homePage {
+.container-title-homePage,
+.container-title-store {
   display: flex;
   justify-content: center;
   margin-top: 40px;
   margin-bottom: 100px;
 }
-.title-homePage {
+.title-homePage,
+.title-store {
   text-align: center;
   font-family: var(--font-Syne);
   font-size: 3rem;
@@ -87,12 +89,12 @@ body {
 }
 
 .modalContainer {
+  display: flex;
   max-width: 300px;
-  max-height: 500px;
+  max-height: 2000px;
   border-radius: 12px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  display: flex;
   flex-direction: column;
   padding: 25px;
 }
@@ -414,6 +416,7 @@ section.container-description-brand .description-brand {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: var(--font-Syne);
 }
 .container-product {
   display: flex;
@@ -437,6 +440,7 @@ section.container-description-brand .description-brand {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: solid 2px transparent;
 }
 
 .container-box-product:hover {
@@ -454,6 +458,7 @@ section.container-description-brand .description-brand {
   margin: 20px;
   align-items: center;
   align-content: center;
+  gap: 0.5vw;
 }
 
 .container-btn-view {
@@ -462,7 +467,6 @@ section.container-description-brand .description-brand {
   max-height: 70vw;
   top: 10vw;
   max-width: 10vw;
-  z-index: 1;
   opacity: 0;
 }
 
@@ -475,6 +479,57 @@ section.container-description-brand .description-brand {
   max-width: 300px;
   max-height: 700px;
 }
+.addOneToCar-btn,
+.deleteFromCart {
+  background-color: #ffffff;
+  width: 130px;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: solid 2px black;
+  border-radius: 30px;
+  cursor: pointer;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  font-family: var(--font-Syne);
+}
+.addOneToCart,
+.removeOneFromCart {
+  background-color: #ffffff;
+  margin: 3px;
+  width: 100px;
+  color: black;
+  padding: 10px;
+  font-size: 16px;
+  border: solid 2px black;
+  border-radius: 30px;
+  cursor: pointer;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  font-family: var(--font-Syne);
+}
+
+.Purchase {
+  background-color: #ffffff;
+  margin: 3px;
+  width: 150px;
+  color: black;
+  padding: 10px;
+  font-size: 16px;
+  border: solid 2px black;
+  border-radius: 30px;
+  cursor: pointer;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  font-family: var(--font-Syne);
+}
+
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
 /*---------FOOTER------- */

@@ -33,21 +33,21 @@ function ProductCard(props) {
               <div>
                 In Cart: {productQuantity}
                 <div>
-                  <button onClick={() => cart.addOneToCart(product.id)} className="mx-2">
+                  <button onClick={() => cart.addOneToCart(product.id)} className="addOneToCart">
                     +
                   </button>
-                  <button onClick={() => cart.removeOneFromCart(product.id)} className="mx-2">
+                  <button onClick={() => cart.removeOneFromCart(product.id)} className="removeOneFromCart">
                     -
                   </button>
                 </div>
               </div>
             </div>
-            <button variant="danger" onClick={() => cart.deleteFromCart(product.id)} className=" my-2">
+            <button onClick={() => cart.deleteFromCart(product.id)} className=" deleteFromCart">
               Remove from cart
             </button>
           </>
         ) : (
-          <button variant="primary" onClick={() => cart.addOneToCart(product.id)}>
+          <button className=" addOneToCar-btn" onClick={() => cart.addOneToCart(product.id)}>
             Add To Cart
           </button>
         )}

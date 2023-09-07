@@ -35,13 +35,12 @@ function Modal({ setOpenModal }) {
             <div className="justify-content-end">
               {/* Here we add a onClick to handle show to store the show variable  */}
               {/*  Our Navbar with productsCount is going to refresh and show the latest up-to-date product count value  */}
-              <button onClick={handleShow}>Cart ({productsCount} Items)</button>
+              <button className="Purchase">Cart ({productsCount} Items)</button>
             </div>
           </div>
           {/* We hide property so whenever the hide event happens we can go all a certain function I'm going to make a function in a second called handle close and when we click on the cart cart button we actually want it to show   */}
 
-          <div how={show} onHide={handleClose}></div>
-          <div closeButton>
+          <div>
             <div> Shopping Cart </div>
           </div>
           <div>
@@ -57,7 +56,7 @@ function Modal({ setOpenModal }) {
                 {/* We only add two values after the decimal because JS haw a problem with long and repetitive numbers*/}
                 {/* All off the information will be send to stripe*/}
                 <h1>Total: {cart.getTotalCost().toFixed(2)}</h1>
-                <button variant="success">Purchase items!</button>
+                <button className="Purchase">Purchase items!</button>
               </>
             ) : (
               <h1>There are no items in your cart! </h1>
@@ -68,11 +67,11 @@ function Modal({ setOpenModal }) {
               onClick={() => {
                 setOpenModal(false);
               }}
-              id="cancelBtn"
+              className="removeOneFromCart"
             >
               Cancel
             </button>
-            <button>Continue</button>
+            <button className="addOneToCart">Continue</button>
           </div>
         </div>
       </div>
