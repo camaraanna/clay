@@ -10,7 +10,7 @@ function CartProduct(props) {
 
   return (
     <>
-    <img src={productData.imgProduct} style={{width: "40%"}} alt="" />
+      <img src={productData.imgProduct} style={{ width: "40%" }} alt="" />
       <h3>{productData.title}</h3>
       <p>{quantity} total</p>
       <p>${(quantity * productData.price).toFixed(2)}</p>

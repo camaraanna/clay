@@ -2,6 +2,8 @@ import { CartContext } from "../CartContext";
 import { useContext } from "react";
 //This hook allow us to access all the cart object//
 
+import { Link } from "react-router-dom";
+
 function ProductCard(props) {
   // prop.product is the product we are selling and it gives us access to all the different information of that certain product  //
   // props is going to be a list of all the different properties on our component and that product is going to be that object, that the reason we can say const product equal to props.poduct and then get different properties from that object.  //
@@ -12,11 +14,21 @@ function ProductCard(props) {
 
   //It's allow us to see if we have an item that is in our cart or not
   const productQuantity = cart.getProductQuantity(product.id);
-  console.log(cart.items);
 
   return (
     <section className="container-box-product">
       <article className="box-product">
+
+
+      <Link to={`/Article/${props.id}`} key={props.id}>
+                <button className="btn-view">
+                  <h4 className="title-btn-view">View</h4>
+                </button>
+              </Link>{" "}
+
+
+
+
         <div className="container-btn-view">
           <button className="btn-view">VIEW</button>
         </div>

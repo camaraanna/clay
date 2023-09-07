@@ -22,6 +22,8 @@ function Store() {
           {/*Map allow us to go to every single element in the array and import the data we want. In this case we are mapping over our product */}
           {/*We are going to return a jsx immdeditely */}
         </div>
+
+       
       </section>
     </>
   );

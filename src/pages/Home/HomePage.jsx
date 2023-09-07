@@ -18,7 +18,7 @@ export const HomePage = () => {
       <DescriptionBrand />
       <Recommendation />
       <div className="container-btn-shop ">
-        <Link to={`/Shop`}>
+        <Link to={`/Store`}>
           <button className="btn-shop">Shop </button>
         </Link>
       </div>
