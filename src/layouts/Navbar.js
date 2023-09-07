@@ -6,6 +6,7 @@ import { CartContext } from "../CartContext";
 import CartProduct from "../components/CartProduct";
 import Modal from "../components/Modal";
 import CartIcon from "../assets/img/icons/cart-icon.png";
+import iconUser from "../assets/img/icons/user-icon.png";
 
 export const Navbar = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -35,6 +36,25 @@ export const Navbar = () => {
           </figure>
         </div>
       </div>
+
+
+
+      <div className="container-icon-user">
+        <div className="container-icon-user">
+          <figure>
+            <Link smooth="true" to={`/Client-Login`}>
+              <img className="icon-user" src={iconUser} alt="" />
+            </Link>
+          </figure>
+        </div>
+      </div>
+
+
+
+
+
+
+
       <div>
         {/* Here we add a onClick to handle show to store the show variable  */}
         {/*  Our Navbar with productsCount is going to refresh and show the latest up-to-date product count value  */}

@@ -10,6 +10,7 @@
   --moz-border-radius: 50px;
   --ms-border-radius: 50px;
   --o-border-radius: 50px;
+  --black: black;
 }
 
 body {
@@ -26,15 +27,25 @@ body {
   justify-content: center;
   flex-direction: column;
 }
-.container-title-homePage,
 .container-title-store {
   display: flex;
   justify-content: center;
   margin-top: 40px;
   margin-bottom: 100px;
 }
-.title-homePage,
 .title-store {
+  text-align: center;
+  font-family: var(--font-Syne);
+  font-size: 3rem;
+}
+
+.container-title-homePage {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+.title-homePage {
   text-align: center;
   font-family: var(--font-Syne);
   font-size: 3rem;
@@ -68,6 +79,13 @@ body {
 .logo {
   max-width: 15%;
   margin-left: 40px;
+}
+
+/*---------ICON------ */
+/*---------Icon user------- */
+
+.icon-user {
+  width: 40%;
 }
 
 /*---------------------------------------------------------------*/
@@ -262,42 +280,66 @@ body {
 
 /*---------INTRODUCTION------- */
 
-.container-intro {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  flex-basis: 56.25vw;
-  background-color: var(--grey);
-  max-width: 200.5vw;
-  max-height: 20.5vw;
-  margin-top: 60px;
-  border-radius: 25px;
-  transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
-  -webkit-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
-  -moz-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
-  -ms-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
-  -o-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -o-border-radius: 25px;
-}
-
-.paragraph {
-  display: flex;
+.container-btn-shop {
   margin-left: auto;
   margin-right: auto;
-  flex-basis: 56.25vw;
-  max-width: 90.5vw;
-  max-height: 7.5vw;
+  margin-bottom: 3vw;
+  max-width: 50.5vw;
+}
+
+section.container-intro article {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
 }
 
 .btn-shop {
-  display: flex;
+  color: var(--black);
+  background-color: #ffffff;
+  font-family: var(--font-Syne);
+  font-size: 2rem;
+  padding: 16px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 90.5vw;
-  max-height: 7.5vw;
+  cursor: pointer;
+  border: solid 2px var(--black);
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  max-width: 50.5vw;
+}
+
+.btn-shop:hover {
+  background-color: var(--black);
+  color: white;
+}
+
+.description-intro {
+  margin-top: 10vw;
+}
+.description-intro-text {
+  font-family: var(--font-Syne);
+  font-size: 1.5rem;
+  font-weight: bolder;
+  padding: 50px;
+  display: flex;
+  flex-basis: 10.25vw;
+}
+
+section.container-intro .description-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  background-color: var(--grey);
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
 }
 
 /*---------------------------------------------------------------*/
@@ -315,17 +357,20 @@ body {
   -moz-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
   -ms-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
   -o-transition: flex-basis 1s cubic-bezier(0, 0.9, 0.4, 0.99);
+  margin-bottom: 7vw;
 }
 
 /*---------Recommendation box Article------- */
+
 .Recommendation-Article {
   display: flex;
   flex-direction: column;
   margin: 10px;
-  padding: 20px 60px;
-  gap: 5px;
+  padding: 20px 70px;
+  gap: 10px;
+  /* background: blue; */
   flex-basis: 56.25vw;
-  max-width: 500.5vw;
+  max-width: 300.5vw;
   max-height: 50.5vw;
 }
 
@@ -346,9 +391,16 @@ body {
   -ms-border-radius: 35px;
   -o-border-radius: 35px;
 }
-.product-title {
-  background-color: aqua;
+.container-product-title {
+  /* background-color: aqua; */
   text-align: center;
+  font-family: var(--font-Syne);
+}
+
+.product-legend {
+  font-family: var(--font-Inter);
+  font-style: italic;
+  font-weight: 400;
 }
 
 /*---------------------------------------------------------------*/
