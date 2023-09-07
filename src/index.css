@@ -392,16 +392,19 @@ section.container-intro .description-intro {
   -o-border-radius: 35px;
 }
 .container-product-title {
-  /* background-color: aqua; */
+  background-color: aqua;
   text-align: center;
   font-family: var(--font-Syne);
 }
+
 
 .product-legend {
   font-family: var(--font-Inter);
   font-style: italic;
   font-weight: 400;
 }
+
+
 
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
