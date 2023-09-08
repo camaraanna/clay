@@ -1,38 +1,25 @@
 import React from "react";
+import { productsArray } from "../data/productsStore";
+import ProductCard from "../components/ProductCard";
+import { Link } from "react-router-dom";
 
 export const Recommendation = () => {
+  // Use slice to get the first three products
+  const firstThreeProducts = productsArray.slice(0, 3);
   return (
     <section className="container-recommendation">
-      <div className="Recommendation-Article">
-        <figure className="container-product-img">
-          <img className="product-img" alt="" />
-        </figure>
-        <div className="container-product-title">
-          <h3 className="product-title">Blue minimalist vase</h3>
-          <h5 className="product-legend">Made in Argentine with charcole as color </h5>
-          <h4 className="product-price">24.45 $</h4>
-        </div>
-      </div>
-      <div className="Recommendation-Article">
-        <figure className="container-product-img">
-          <img className="product-img" alt="" />
-        </figure>
-        <div className="container-product-title">
-          <h3 className="product-title">Blue minimalist vase</h3>
-          <h5 className="product-legend">Made in Argentine with charcole as color </h5>
-          <h4 className="product-price">24.45 $</h4>
-        </div>
-      </div>
-      <div className="Recommendation-Article">
-        <figure className="container-product-img">
-          <img className="product-img" alt="" />
-        </figure>
-        <div className="container-product-title">
-          <h3 className="product-title">Blue minimalist vase</h3>
-          <h5 className="product-legend">Made in Argentine with charcole as color </h5>
-          <h4 className="product-price">24.45 $</h4>
-        </div>
-      </div>
+      <>
+        <section className="container-store-recommendation">
+          <div className="container-product-recommendation">
+            {/* Map over the first three products */}
+            {firstThreeProducts.map((product, index) => (
+              <div align="center" key={index}>
+                <ProductCard product={product} />
+              </div>
+            ))}
+          </div>
+        </section>
+      </>
     </section>
   );
 };

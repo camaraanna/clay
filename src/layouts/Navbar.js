@@ -37,8 +37,7 @@ export const Navbar = () => {
         </div>
       </div>
 
-
-
+      <div className="empty">We understand that art should not be limited to the elite. Clay offers a curated selection of artwork that caters to a wide range of budgets.that caters to a wide range of budgets</div>
       <div className="container-icon-user">
         <div className="container-icon-user">
           <figure>
@@ -48,12 +47,6 @@ export const Navbar = () => {
           </figure>
         </div>
       </div>
-
-
-
-
-
-
 
       <div>
         {/* Here we add a onClick to handle show to store the show variable  */}
