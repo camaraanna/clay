@@ -27,10 +27,10 @@ function ProductCard(props) {
         <img src={product.imgProduct} alt="" />
         <h2>{product.title}</h2>
         {/* <h5 className="product-legend">{product.description_Product}</h5> */}
-        <Link style={{ textDecoration: "none", color: "black" }} to={`/ArtistsPage/${product.id}`} key={props.id}>
-          <h3>{product.Artistname}</h3>
-        </Link>
-
+        {/* <Link style={{ textDecoration: "none", color: "black" }} to={`/ArtistsPage/${product.id}`} key={props.id}>
+         
+        </Link> */}
+        <h3>{product.Artistname}</h3>
         <h2>${product.price}</h2>
         {/* If the quantity is equal to 0 it's going to show add to cart but if it's at least one item then we will show a different interface  */}
         {productQuantity > 0 ? (
