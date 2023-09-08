@@ -13,46 +13,35 @@
 //Harmony of Heritage: price_1NnofnBxN6v7JPxmVA4yQRY9
 const express = require("express");
 const cors = require("cors");
+const stripe = require("stripe")("sk_test_51NnjJEBxN6v7JPxmSdDjvBXDf8OKnvx220uPCqrf5yNYxVbbTNsJ2Fr4GMgJXJ5W1FDmSJXnuvJDIIHb422Hjwpi00N4Wfurua"); // Remplacez par votre clé secrète Stripe
 
-const stripe = require("stripe")("sk_test_51NnjJEBxN6v7JPxmSdDjvBXDf8OKnvx220uPCqrf5yNYxVbbTNsJ2Fr4GMgJXJ5W1FDmSJXnuvJDIIHb422Hjwpi00N4Wfurua");
 const app = express();
-app.use(cors());
+
+const corsOptions = {
+  origin: "https://localhost:3001", // Remplacez par l'URL de votre application React
+};
+
+app.use(cors(corsOptions));
 app.use(express.static("public"));
 app.use(express.json());
-app.use(cors());
 
 app.post("/checkout", async (req, res) => {
-  /*
-    req.body.items
-    [
-        {
-            id: 1,
-            quantity: 3
-        }
-    ]
-
-    stripe wants
-    [
-        {
-            price: 1,
-            quantity: 3
-        }
-    ]
-    */
   console.log(req.body);
   const items = req.body.items;
   let lineItems = [];
+
   items.forEach((item) => {
     lineItems.push({
       price: item.id,
+      quantity: item.quantity,
     });
   });
 
   const session = await stripe.checkout.sessions.create({
     line_items: lineItems,
     mode: "payment",
-    success_url: "http://localhost:3000/success",
-    cancel_url: "http://localhost:3000/cancel",
+    success_url: "https://localhost:3001/success", // Remplacez par l'URL de succès de votre application React
+    cancel_url: "https://localhost:3001/cancel", // Remplacez par l'URL d'annulation de votre application React
   });
 
   res.send(
@@ -62,4 +51,5 @@ app.post("/checkout", async (req, res) => {
   );
 });
 
-app.listen(4000, () => console.log("Listening on port 4000!"));
+const port = 4000;
+app.listen(port, () => console.log(`Le serveur fonctionne sur le port ${port}`));

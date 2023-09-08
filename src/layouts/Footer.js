@@ -17,18 +17,18 @@ export const Footer = () => {
       </div>
       <div className="container-link-footer">
         <div>
-          <Link smooth="true" to={`/`}>
+          <Link style={{ textDecoration: "none", color: "black", margin:"20px", display:"flex"}} smooth="true" to={`/`}>
             Home page
           </Link>
           {/*Link is use to connect the navigator to other pages */}
 
-          <Link smooth="true" to={`/OurHistory`}>
+          <Link style={{ textDecoration: "none", color: "black", margin:"20px", display:"flex"}} smooth="true" to={`/OurHistory`}>
             Our History
           </Link>
-          <Link smooth="true" to={`/About`}>
+          <Link style={{ textDecoration: "none", color: "black", margin:"20px", display:"flex"}} smooth="true" to={`/About`}>
             About
           </Link>
-          <Link smooth="true" to={`/Store`}>
+          <Link style={{ textDecoration: "none", color: "black", margin:"20px", display:"flex"}} smooth="true" to={`/Store`}>
             Shop
           </Link>
         </div>

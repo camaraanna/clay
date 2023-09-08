@@ -27,7 +27,7 @@ function ProductCard(props) {
         <img src={product.imgProduct} alt="" />
         <h2>{product.title}</h2>
         {/* <h5 className="product-legend">{product.description_Product}</h5> */}
-        <Link to={`/ArtistsPage/${product.id}`} key={props.id}>
+        <Link style={{ textDecoration: "none", color: "black" }} to={`/ArtistsPage/${product.id}`} key={props.id}>
           <h3>{product.Artistname}</h3>
         </Link>
 
